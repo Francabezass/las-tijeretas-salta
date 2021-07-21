@@ -1,0 +1,379 @@
+body{
+    background: rgb(217,232,239);
+    background: linear-gradient(194deg, rgba(217,232,239,1) 9%, rgba(234,242,245,1) 89%);
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    font-family: Inter;
+
+        h1{
+            font-weight: 800;
+            font-size: 58px;
+            line-height: 80px;
+        }
+        h3{
+            font-weight: 800;
+            font-size: 43px;
+            line-height: 54px;
+    
+        }
+        p {
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 32px;
+            text-align: justify;
+        }
+        li{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            font-feature-settings: 'salt' on, 'liga' off;
+            padding-left: 10%;
+        }
+        .callToAction {
+            width: fit-content;
+            padding: 1.5%;
+            height: 40px;
+            left: 48px;
+            top: 480px;
+            background: #8C30F5;
+            border-radius: 8px;
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+            margin: 40px 0px;
+            color: white;
+            display: flex;
+            align-items: center;
+            
+          }
+          .advertencia{
+              display: flex;
+              justify-content: flex-end;  
+            }
+
+        iframe {width: -webkit-fill-available;}
+    
+    
+    }
+
+
+.body {
+    width:97%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 0% 0%;
+    grid-auto-flow: row;
+    gap: 3% 3%; 
+    grid-template-areas: 
+    "headerUno headerDos"
+    "mainUno mainDos"
+    "mainTres mainCuatro"
+    "mainCinco mainCinco"
+    "mainSeis mainSiete"
+    "mainOcho mainOcho"
+    "mainNueve mainDiez"
+    "mainOnce mainOnce"; 
+
+  }
+  
+  .headerUno { grid-area: headerUno;
+                display: flex;
+                justify-content: center;
+    img{
+        max-width: 166;
+        max-height: 92px;
+        border-radius: 5%;
+    }
+}
+
+  .headerDos { 
+        grid-area: headerDos;
+        align-self: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        font-feature-settings: 'salt' on, 'liga' off;
+        place-self: center;
+    li{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+ 
+
+  }
+}
+  
+
+  
+  .mainUno { grid-area: mainUno;
+    padding-left: 11.5%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    .textoMainUno {
+        margin: 0px;
+    }
+
+}
+  
+  .mainDos { grid-area: mainDos; 
+    display: flex;
+    justify-content: flex-end;
+    img{
+        border-radius: 5%;
+        width: 100%;
+
+    }
+
+}
+  
+.mainTres {
+    grid-area: mainTres;
+        padding-left: 11.5%;
+    img{
+        width: 100%;
+    }
+        
+  }
+
+  
+  .mainCuatro {
+      grid-area: mainCuatro; 
+      text-align: -webkit-center;
+
+
+    }
+  
+  .mainCinco { grid-area: mainCinco; 
+    text-align: center;
+
+}
+  
+  .mainSeis { grid-area: mainSeis; 
+    align-self: center;
+
+}
+  
+  .mainSiete { grid-area: mainSiete; 
+    width: -webkit-fill-available;
+}
+  
+  .mainOcho { grid-area: mainOcho;
+    align-self: center;
+    text-align: center;
+}
+
+  .mainNueve { grid-area: mainNueve; 
+    align-self: center;
+    text-align: center;
+}
+  
+    .mainDiez { grid-area: mainDiez; 
+    align-self: center;
+    text-align: center;
+}
+
+  .mainOnce { grid-area: mainOnce;
+    align-self: center;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+@media (max-width: 1000px) {
+    body{
+        background: rgb(217,232,239);
+        background: linear-gradient(194deg, rgba(217,232,239,1) 9%, rgba(234,242,245,1) 89%);
+        margin: 0;
+        padding: 0%;
+        }
+    
+    
+    .body {
+        gap: 1.5%;
+
+        .mainTres {
+            grid-area: mainTres;
+            display: flex;
+            
+            img{
+                width: -webkit-fill-available;
+                align-self: center;
+            }
+                
+          }
+          .mainDos { grid-area: mainDos; 
+            display: flex;
+            justify-content: flex-end;
+            img{
+                border-radius: 5%;
+                width: -webkit-fill-available;
+                align-self: center;
+            }
+      }
+  }
+}
+
+@media (max-width: 800px) {
+    body{
+        background: rgb(217,232,239);
+        background: linear-gradient(194deg, rgba(217,232,239,1) 9%, rgba(234,242,245,1) 89%);
+        margin: 0;
+        padding: 0%;
+        }
+
+        h1 {text-align: center;
+            padding-left: 3%;
+        padding-right: 3%;}
+        h3{text-align: center;
+            padding-left: 3%;
+        padding-right: 3%;}
+        p{text-align: center;
+        padding-left: 3%;
+        padding-right: 3%;
+        }
+    
+        .body {
+            display: grid; 
+            grid-template-columns: 100%; 
+            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto; 
+            gap: 0.5% 0.5%; 
+            grid-template-areas: 
+              "headerUno"
+              "headerDos"
+              "mainUno"
+              "mainDos"
+              "mainCuatro"
+              "mainTres"
+              "mainCinco"
+              "mainSeis"
+              "mainSiete"
+              "mainOcho"
+              "mainDiez"
+              "mainNueve"
+              "mainOnce";
+                p{
+                    padding-left: 3%;
+                    padding-right: 3%;
+            }
+
+
+              .headerUno { grid-area: headerUno; }
+              .headerDos { grid-area: headerDos;
+            
+                li{
+                    padding-left: 0%;
+                    ul {
+                        padding: 10px;
+
+
+                    }
+
+                }
+            
+            }
+        .mainDos { grid-area: mainDos; 
+            display: flex;
+            justify-content: flex-end;
+            img{
+                border-radius: 5%;
+                width: -webkit-fill-available;
+                align-self: center;
+            }
+      }
+      .mainTres {  grid-area: mainTres;
+        display: flex;
+        
+        img{
+            width: -webkit-fill-available;
+            align-self: center;
+            padding-left: 2%;
+        }
+            
+      }
+
+      .mainCuatro { grid-area: mainCuatro; }
+      .mainCinco { grid-area: mainCinco; }
+      .mainSeis {grid-area: mainSeis}
+      .mainSiete { grid-area: mainSiete; 
+        width: -webkit-fill-available;
+    }
+      
+      .mainOcho { grid-area: mainOcho;
+        align-self: center;
+        text-align: center;
+    }
+    
+      .mainNueve { grid-area: mainNueve; 
+        align-self: center;
+        text-align: center;
+
+        .ti-widget {
+            padding-left: 5%;
+
+
+        }
+    }
+      
+        .mainDiez { grid-area: mainDiez; 
+        align-self: center;
+        text-align: center;
+    }
+    
+      .mainOnce { grid-area: mainOnce;
+        align-self: center;
+        text-align: center;
+        text-align: -webkit-center;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+    body{
+        background: rgb(217,232,239);
+        background: linear-gradient(194deg, rgba(217,232,239,1) 9%, rgba(234,242,245,1) 89%);
+        margin: 0;
+        padding: 0%;
+
+        h1{
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 30px;
+            text-align: center;
+            padding-left: 1.5%;
+        }
+        h3{
+            font-weight: 800;
+            font-size: 15px;
+            line-height: 30px;
+            text-align: center;
+            padding-left: 1.5%;
+    
+        }
+        p {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            padding-left: 1.5%;
+
+        }
+        li{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            font-feature-settings: 'salt' on, 'liga' off;
+            padding-left: 10%;
+        }
+
+
+        }}
